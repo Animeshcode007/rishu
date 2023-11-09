@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100vw;
+    background-color: #101820;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandtitle{
+    padding-left: 2rem;
+    font-size: 41px;
+    color: #F96167;
+}
+li{
+    display: inline-block;
+    color: #F96167;
+}
+.listitems{
+    display: flex;
+    font-size: 25px;
+    padding-right: 2rem;
+    gap: 1rem;
+}
+.listitems a li:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    color: #3e5ad8;
+}
+.mainbody{
+    background-color: #FEE715;
+    height: 148vh;
+    width: 80vw;
+    margin: auto;
+    border: 1px solid rgb(124, 124, 124);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_01{
+    padding-top: 75px;
+    font-size: 46px;
+}
+.para_01{
+    font-size: 20px; 
+}
+.cards{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 62px;
+    position: relative;
+    left: 49px;
+}
+.card_1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 18rem;
+    height: 20rem;
+}
+.boximg{
+    height: 207px;
+    width: 287px;
+}
+.locabox{
+    padding-top: 10px;
+}
+.rentbox{
+    padding-top: 10px;
+}
+@media (max-width:1330px) {
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (max-width:874px) {
+    .cards{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+.endingbar{
+    width: 100vw;
+    height: 7vh;
+    background-color: #101820;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
